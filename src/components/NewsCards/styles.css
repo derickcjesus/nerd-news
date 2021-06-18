@@ -1,0 +1,39 @@
+.cards {
+    border-radius: 1.4rem;
+    display: flex;
+    width: 90%;
+    margin: 4rem auto;
+    box-shadow: 0px 3.26804px 16.3402px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    object-fit: cover;
+    width: 18rem;
+    border-radius: 1.4rem 0 0 1.4rem;
+}
+
+.cards .container {
+    padding: 2rem 3rem 1.2rem;
+}
+
+.cards .container h1 {
+    color: #0DADAE;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.cards .container p {
+    color: #666666;
+    font-weight: 400;
+    line-height: 1.8rem;
+    font-size: 1.7rem;
+}
+
+.cards .container a {
+    color: #0DADAE;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
