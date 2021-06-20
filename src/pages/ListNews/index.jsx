@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
-import Header from '../../components/Header';
-import NewsCards from '../../components/NewsCards';
+import axios from "axios";
 
-export default function ListNews() {
-    return (
-        <>
-            <Header />
-            <NewsCards />
-        </>
-    );
-}
+import Header from "../../components/Header";
+import NewsCard from "../../components/NewsCard";
+
+const ListNews = () => {
+  const [noticias, setNoticias] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:5001/news").then((response) => {
+      setNoticias(response.data);
+    });
+  }, []);
+
+  return (
+    <>
+      <Header />
+      {noticias.map((noticia) => (
+        <NewsCard key={noticia.id} props={noticia} />
+      ))}
+    </>
+  );
+};
+
+export default ListNews;
