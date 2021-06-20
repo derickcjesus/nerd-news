@@ -1,0 +1,42 @@
+.cards {
+    border-radius: 1.4rem;
+    display: flex;
+    width: 90%;
+    margin: 4rem auto;
+    box-shadow: 0px 3.26804px 16.3402px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    object-fit: cover;
+    width: 13rem;
+    height: 14rem;
+    border-radius: 1.4rem 0 0 1.4rem;
+}
+
+.cards .container {
+    padding: 2rem 3rem 1.2rem;
+}
+
+.cards .container h1 {
+    font-size: 1.3rem;
+    color: #0DADAE;
+    line-height: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.cards .container p {
+    color: #666666;
+    font-weight: 400;
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    margin-bottom: revert
+}
+
+.cards .container a {
+    color: #0DADAE;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
