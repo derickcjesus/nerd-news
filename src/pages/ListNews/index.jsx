@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Header from "../../components/Header";
 import NewsCard from "../../components/NewsCard";
+import Footer from "../../components/Footer";
 
 const ListNews = () => {
   const [noticias, setNoticias] = useState([]);
@@ -17,9 +18,12 @@ const ListNews = () => {
   return (
     <>
       <Header />
+
       {noticias.map((noticia) => (
         <NewsCard key={noticia.id} props={noticia} />
       ))}
+
+      <Footer />
     </>
   );
 };
