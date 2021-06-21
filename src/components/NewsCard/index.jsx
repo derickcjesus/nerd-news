@@ -9,7 +9,7 @@ const NewsCard = ({props}) => {
         src={props.imagem}
         alt={props.imagem}
       />
-      <div className="container">
+      <div className="container-news-card">
         <h1>
           {props.titulo}
         </h1>

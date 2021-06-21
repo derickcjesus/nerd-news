@@ -13,18 +13,18 @@
     border-radius: 1.4rem 0 0 1.4rem;
 }
 
-.cards .container {
+.cards .container-news-card {
     padding: 2rem 3rem 1.2rem;
 }
 
-.cards .container h1 {
+.cards .container-news-card h1 {
     font-size: 1.3rem;
     color: #0DADAE;
     line-height: 1.3rem;
     margin-bottom: .5rem;
 }
 
-.cards .container p {
+.cards .container-news-card p {
     color: #666666;
     font-weight: 400;
     line-height: 1.2rem;
@@ -32,7 +32,7 @@
     margin-bottom: revert
 }
 
-.cards .container a {
+.cards .container-news-card a {
     color: #0DADAE;
     font-size: 1.3rem;
     font-weight: 700;
