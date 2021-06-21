@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import Header from "../../components/Header";
+import NameBlog from "../../components/NameBlog";
 import NewsCard from "../../components/NewsCard";
 import Footer from "../../components/Footer";
 
@@ -19,13 +20,17 @@ const ListNews = () => {
     <>
       <Header />
 
-      {noticias.map((noticia) => (
-        <NewsCard key={noticia.id} props={noticia} />
-      ))}
+      <NameBlog />
+
+      <main>
+        {noticias.map((noticia) => (
+          <NewsCard key={noticia.id} props={noticia} />
+        ))}
+      </main>
 
       <Footer />
     </>
   );
-};
+}
 
 export default ListNews;
