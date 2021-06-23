@@ -1,10 +1,15 @@
-import ListNews from './pages/ListNews';
+// import News from './pages/News';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes/routes";
 
-import './assets/global.css';
+import "./assets/global.css";
 
 function App() {
   return (
-    <ListNews />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 
