@@ -32,7 +32,7 @@
     margin-bottom: revert
 }
 
-.cards .container-news-card a {
+.cards .container-news-card span {
     color: #0DADAE;
     font-size: 1.3rem;
     font-weight: 700;
