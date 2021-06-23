@@ -17,6 +17,11 @@
     height: 137px;
 }
 
+.container h4 {
+    color: #666666;
+    margin-top: 8px;
+}
+
 .container p {
     font-size: 1.8rem;
     font-weight: 400;
